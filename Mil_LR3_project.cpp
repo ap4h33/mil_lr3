@@ -1,21 +1,21 @@
 //вар 12
 #include <iostream>
 
-double enter_number_x() {
+double enter_number_x(){
     double num = 0.0;
     std::cout << "Введите число: ";
     std::cin >> num;
     return num;
 }
 
-double enter_number_y() {
+double enter_number_y(){
     double num = 0.0;
     std::cout << "Введите число: ";
     std::cin >> num;
     return num;
 }
 
-double enter_number_z() {
+double enter_number_z(){
     double num = 0.0;
     std::cout << "Введите число: ";
     std::cin >> num;
