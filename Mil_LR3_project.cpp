@@ -7,22 +7,28 @@ double enter_number_x() {
     std::cin >> num;
     return num;
 }
+
 double enter_number_y() {
     double num = 0.0;
     std::cout << "Введите число: ";
     std::cin >> num;
     return num;
 }
+
 double enter_number_z() {
     double num = 0.0;
     std::cout << "Введите число: ";
     std::cin >> num;
     return num;
 }
+
 double decimal_sum(double x = 0.0, double y = 0.0, double z = 0.0){
     return (x - int(x)) + (y - int(y)) + (z - int(z));
 }
-double full_sum(){};
+
+double full_sum(double x = 0.0, double y = 0.0, double z = 0.0){
+    return int(x) + int(y) + int(z);
+}
 
 int main() {
     int choice = 0;
@@ -37,13 +43,13 @@ int main() {
         case 0:
             return 0;
         case 1:
-            enter_number();
+            enter_number_x();
             break;
         case 2:
-            enter_number();
+            enter_number_y();
             break;
         case 3:
-            enter_number();
+            enter_number_z();
             break;
         case 4:
             decimal_sum();
