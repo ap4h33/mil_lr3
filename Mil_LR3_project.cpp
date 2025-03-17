@@ -19,7 +19,9 @@ double enter_number_z() {
     std::cin >> num;
     return num;
 }
-double decimal_sum(){};
+double decimal_sum(double x = 0.0, double y = 0.0, double z = 0.0){
+    return (x - int(x)) + (y - int(y)) + (z - int(z));
+}
 double full_sum(){};
 
 int main() {
